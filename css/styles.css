@@ -64,8 +64,6 @@ select:focus {
    
 }
 
-
-
 footer p {
     font-style: italic;
     margin-bottom: 20em;
@@ -112,6 +110,19 @@ input::placeholder {
     border-radius: .5em;
     padding: 1em;
 }
+
+
+select {
+    color: #9ca6b0;
+}
+
+
+  option[value=""][disabled] {
+    display: none;
+  }
+  option {
+    color: black;
+  }
 
 .contact input[type=number] {
     align-self: flex-start;
