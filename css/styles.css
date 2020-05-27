@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    text-align: center;
+    color:#9ca6b0;
+}
+
+header {
+    background-color:#2d3945;
+    color: white;
+    padding: 2em 0;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 1.75em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.intro {
+    padding: 2em 0;
+    border-bottom: .4em solid #2d3945;
+    margin-bottom: .25em;
+}
+
+.intro p {
+    margin-top: 1em;
+}
+
+h2 {
+    color: #2d3945;
+}
+
+.contact,
+.newsletter {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    border-top: .2em solid #2d3945;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    color: #2d3945;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.contact input:focus,
+textarea:focus,
+select:focus {
+    outline: #2d3945 solid 1px;
+   
+}
+
+
+
+footer p {
+    font-style: italic;
+    margin-bottom: 20em;
+    color: lightgrey;
+}
+
+input::placeholder {
+    text-align: right;
+    padding: 0 1.5em;
+    font-style: italic;
+    color: #9ca6b0 ;
+}
+
+/* flexbox styles */
+
+.contact div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 4em;
+    margin: 2em 0;
+}
+
+.contact div[class="top"] {
+    margin: 1em 0 2em 0;
+}
+
+.contact legend {
+    text-align: start;
+    margin: 1em 0 0 0;
+}
+
+.contact label {
+    flex-grow: 1;
+    align-self: flex-start;
+    margin: 1em 0;
+}
+
+.contact input,
+.contact select  {
+    background-color: #eff0f1;
+    flex-grow: 3;
+    border: none;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.contact input[type=number] {
+    align-self: flex-start;
+}
+
+.newsletter legend {
+    text-align: start;
+}
+
+.newsletter div
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+
+.newsletter div[class="signup"]
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 3em 0 1em 0;
+    border-radius: .25em;
+}
+
+.newsletter p {
+    margin-top: 1em;
+}
+
+label[for="topics"] {
+    padding: 1em 0;;
+}
+
+.newsletter textarea {
+    background-color: #eff0f1;
+    border: none;
+    border-radius: .5em;
+    align-self: stretch;
+    height: 10em;
+}
+
+input {
+    padding: 1px;
+}
+
+.signup {
+    align-self: stretch;
+    background-color: #52bdb7;
+    padding: 1.5em 0;
+}
+
+input[type="submit"] {
+    color:white;
+    align-self: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #52bdb7;
+    border: none;  
+}
+
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+
+header {
+    padding: 1em 0;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+.intro h2 {
+    font-size: 1em;
+}
+
+.container {
+    width: 50%;
+}
+
+.contact legend,
+.newsletter legend {
+    font-size: 1em;
+    margin: 2em 0 0em 0;
+}
+
+.contact div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 1em 0;
+}
+
+.contact label {
+    font-size: .75em;
+    text-align: start;
+    margin: 0 2em 0 0;
+    align-self: center;
+    flex-grow: 1;
+    width: 6em;
+}
+
+.contact input,
+.conatct select {
+    height: 3em;
+    flex-grow: 3;
+    align-self: center;
+
+}
+
+.contact div[class="code"] {
+
+   flex-direction: row;
+   flex-wrap: nowrap;
+    align-items: center;
+    justify-content: left;
+    margin: 1em 0;
+}
+
+.contact div[class="code"] label {
+    flex-grow: 1;
+    width: 30%;
+    margin: 0;
+ }
+
+ .contact div[class="code"] span {
+    flex-grow: 3; 
+    width: 45%;
+ }
+
+
+.contact input[type="number"] {
+    align-self: center;
+    flex-grow: 3;
+    width: 25%;
+
+
+}
+
+.newsletter legend {
+    font-size: 1em;
+}
+
+.newsletter p,
+.newsletter label {
+    font-size: .75em;
+}
+
+.newsletter textarea {
+    height: 5em;
+}
+
+.newsletter .signup {
+    padding: .75em 0;
+}
+
+.newsletter div[class="signup"] {
+    margin: 1.5em 0;
+}
+
+input[type="submit"] {
+    font-size: 1em;
+}
+
+
+}
